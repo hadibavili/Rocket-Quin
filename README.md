@@ -15,7 +15,7 @@ You can see where rockets will launch on a map with this application. It is poss
 - More testing to find any bugs in my application
 - Work on the user interface and user experience of the application.
 - To avoid unnecessary re-executions, I'd like to wrap some of my functions in `useCallback` and `useMemo`.
-- Complete the first upcoming launch in order to make it functional
+- Complete the first occurring launch in order to make it functional
 
 ### Tech stack:
 
