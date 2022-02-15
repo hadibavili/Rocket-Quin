@@ -1,6 +1,7 @@
-import Main from "./Main";
 import { customRender } from "test/test-utils";
 import { waitForElementToBeRemoved } from "@testing-library/react";
+
+import Main from "./Main";
 
 describe("Main", () => {
   describe("When the fetch operation is pending", () => {

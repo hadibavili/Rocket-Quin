@@ -11,7 +11,6 @@ const initialState: InitialStateType = {
    },
    isLoading: false,
    error: "",
-   count: 0,
 };
 
 const rocketSlice = createSlice({

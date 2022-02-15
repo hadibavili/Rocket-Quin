@@ -1,8 +1,8 @@
 import { MapContainer, TileLayer } from "react-leaflet";
 import styled from "styled-components";
 import { LatLngExpression } from "leaflet";
-import { CONFIG } from "../../global/config";
 import "leaflet/dist/leaflet.css";
+import { CONFIG } from "global/config";
 import Points from "./Points";
 
 const CustomDiv = styled.div`

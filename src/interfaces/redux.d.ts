@@ -3,7 +3,6 @@ interface InitialStateType {
    currentFilter: Filter;
    isLoading: boolean;
    error: string;
-   count: number;
 }
 interface Filter {
    start: string;

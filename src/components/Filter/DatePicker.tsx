@@ -32,7 +32,7 @@ const DatePickerCustom: React.FC<DatePickerTypes> = props => {
    
    return (
       <>
-         <label htmlFor="">{props.label}:</label>
+         <label>{props.label}:</label>
 
          <DatePicker
             selected={new Date(filter[props.type])}
