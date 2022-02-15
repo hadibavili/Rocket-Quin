@@ -1,16 +1,27 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { fetchRocketsAsync } from "../thunk/rocketThunks";
+import { CONFIG } from "global/config";
 
 const initialState: InitialStateType = {
    rockets: [],
+   currentFilter: {
+      start: CONFIG.START.toISOString(),
+      end: CONFIG.END.toISOString(),
+      limit: CONFIG.LIMIT,
+   },
    isLoading: false,
    error: "",
    count: 0,
 };
+
 const rocketSlice = createSlice({
    name: "rockets",
    initialState,
-   reducers: {},
+   reducers: {
+      changeFilter(state, action: PayloadAction<Filter>) {
+         state.currentFilter = action.payload;
+      },
+   },
    extraReducers: builder => {
       builder
          .addCase(fetchRocketsAsync.pending, state => {

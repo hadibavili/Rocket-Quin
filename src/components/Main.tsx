@@ -3,6 +3,7 @@ import { fetchRocketsAsync } from "features/rockets/thunk/rocketThunks";
 import { useAppDispatch } from "app/hooks";
 import { CONFIG } from "global/config";
 import Map from "./Map/Map";
+import Filter from "./Filter/Filter";
 
 const Main: React.FC = () => {
    const dispatch = useAppDispatch();
@@ -16,7 +17,12 @@ const Main: React.FC = () => {
          })
       );
    }, [dispatch]);
-   return <Map />;
+   return (
+      <>
+         <Filter />
+         <Map />
+      </>
+   );
 };
 
 export default Main;

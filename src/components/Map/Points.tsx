@@ -11,6 +11,7 @@ const myIcon = new Icon({
 });
 
 const Points: React.FC = () => {
+   
    const rockets = useAppSelector((state: RootState) => state.rockets.rockets);
 
    return (

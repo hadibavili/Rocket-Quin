@@ -7,11 +7,12 @@ interface PopupProps {
 const Popup: React.FC<PopupProps> = ({ rocket }) => {
    return (
       <LeafletPopup>
-         <h3>Name: {rocket.name}</h3>
-         <h3>Name of lunch: {rocket.pad.name}</h3>
-         <h3>Lunch date: {rocket.window_start}</h3>
-         <h3>Agencies: {rocket.launch_service_provider.name}</h3>
+         <h6>Name: {rocket.name}</h6>
+         <h6>Name of lunch: {rocket.pad.name}</h6>
+         <h6>Lunch date: {rocket.window_start}</h6>
+         <h6>Agencies: {rocket.launch_service_provider.name}</h6>
       </LeafletPopup>
    );
 };
+
 export default Popup;

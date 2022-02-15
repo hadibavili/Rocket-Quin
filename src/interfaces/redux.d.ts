@@ -1,5 +1,6 @@
 interface InitialStateType {
-   rockets: any[];
+   rockets: Rocket[];
+   currentFilter: Filter;
    isLoading: boolean;
    error: string;
    count: number;
